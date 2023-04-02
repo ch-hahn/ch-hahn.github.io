@@ -1,7 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html><head>
 <title>Charles Hahn's Portfolio</title>
+<style>
+body {
+    background: orchid;
+}
+.content {
+    max-width: 1000px;
+    margin: auto;
+    background: orchid;
+    padding: 5px
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid darkorchid;
+}
+
+.tab button{
+    background-color: orchid;
+    float: left;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    transition: 0.1s;
+    font-size: 12px;
+}
+
+.tab button:hover {
+    background-color: darkorchid;
+}
+
+.tab button.active {
+    background-color: orchid;
+}
+
+.tabcontent {
+    display: none;
+    padding: 4px 8px;
+    border: 1px solid orchid;
+    border-top: none;
+}
+
+li{
+    margin: 15px 0;
+}
+</style>
+</head>
 <body>
+<div class="content">
+    <div style="width:1000px;" class="tab">
+        <button class="tablinks active" onclick="openT(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openT(event, 'Who I Am')">Who I Am</button>
+    </div>
+</div>
 <p> I exist! </p>
 </body>
 </html>
