@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html><head>
 <title>Charles Hahn's Portfolio</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-    background: orchid;
+    background: grey;
 }
 
-p {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: whitesmoke;
+}
 
 .content {
-    max-width: 800px;
-    margin: auto;
-    background: orchid;
-    padding: 10px
+    max-width: 1600px;
+    margin: 1px;
+    background: grey;
 }
 .tab {
     overflow: hidden;
-    border: 1px solid darkorchid;
+    border: 1px solid darkgrey;
 }
 
 .tab button{
-    background-color: orchid;
+    background-color: grey;
+    color: whitesmoke;
     float: left;
     border: 1px;
     outline: none;
@@ -32,24 +36,29 @@ p {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 }
 
 .tab button:hover {
-    background-color: darkorchid;
+    background-color: darkgrey;
 }
 
 .tab button.active {
-    background-color: orchid;
+    background-color: grey;
 }
 
 .tabcontent {
     display: none;
-    padding: 4px 8px;
-    border: 1px solid orchid;
+    padding: 6px 12px;
+    border: 1px solid grey;
     border-top: none;
 }
 
 li{
-    margin: 15px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: whitesmoke;
 }
 
+a{
+    color:aqua
+}
 
 </style>
 </head>
@@ -60,12 +69,16 @@ li{
         <button class="tablinks" onclick="openT(event, 'Who I Am')">Who I Am</button>
     </div>
 </div>
+
+
 <div id="Home" class="tabcontent" style="display: block; width: 876px;">
-<p><br> I exist! </p></br>
+<p align="left" width="130" alt="sb">This is where my various scraps of the work will go:</p>
+<li><a href=https://docs.google.com/spreadsheets/d/1RlrxJwXfagZD3PiSzIfim3v7vW9VpRd3_3Ws1_A79lA/edit#gid>This Population Projection spreadsheet</a>
+has accurately projected population growth as a function of the January job report of each year, and when adjusted for the biases of the U.S. Census Department's data collection system as part of the American Community Survey, it routinely comes within 1000 people of the actual number.</li>
 </div>
 
 <div id="Who I Am" class="tabcontent" style="display: none; width: 876px;">
-<p> I am Human </p>
+<p align="left">I am a freshman at Clarence High School in Clarence, New York. <br> I work on data analysis models, namely population growth functions and electoral projection machines.</p>
 </div>
 
 
